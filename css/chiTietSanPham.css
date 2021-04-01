@@ -1,0 +1,91 @@
+
+
+
+.container-description-cake .row-flex-my{
+    flex-wrap: nowrap;
+    height: 500px;
+    width: 100%;
+    font-size: 0;
+    margin-top: 50px; 
+    /* display: inline-block; */ /*ko dc co dong nay*/
+}
+
+
+.container-description-cake .image-dc{ 
+    /* background-color: rgb(160, 229, 160); */
+    display: inline-block;
+    height: 100%;
+    /* position: relative;
+    top: 0; */
+    font-size: 10px;
+}
+
+.container-description-cake .image-dc img{
+    height: 90%;
+    width: 100%;
+    display: inline-block;
+    /* position: absolute; */
+    object-fit: cover;
+}
+
+.container-description-cake .document-dc{ 
+    /* background-color: rgb(111, 111, 226); */
+    display: inline-block;
+    height: 100%;
+    font-size: 10px;
+}
+
+.document-dc{
+    margin-left: 20px;
+    
+}
+
+.dc-name-cake{
+    color: #555;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Lato",sans-serif
+}
+
+.dc-price-cake{
+    color: #111;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Lato",sans-serif
+}
+
+.dc-note{
+    color: #777;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Lato",sans-serif;
+    margin-right: 200px;
+    height: 60%;
+    /* background-color: blue; */
+}
+
+.dc-buy{
+    margin-top: 20px;
+    font-size: 0px;
+}
+
+.btn-number{
+    background-color: transparent;
+    height: 38px;
+    width: 20px;
+  
+    border-style: solid;
+    border-width: 1px;
+    /* border-color: white; */
+  
+    text-align: center;
+    
+  }
+.my-input-number{
+    height: 38px;
+    width: 50px;
+}
+
+.dc-buy .btn-buy{
+    margin-left: 20px;
+}

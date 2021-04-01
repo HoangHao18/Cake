@@ -1,0 +1,260 @@
+
+.header-main__wrapper::before{
+    opacity: 0%;
+}
+
+
+.loi-mo-dau{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.loi-mo-dau .lmd-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.loi-mo-dau .lmd-image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: 2; */
+    background-color: black;
+    opacity: 50%;
+}
+
+.loi-mo-dau .lmd-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* slider type cake */
+.container-type-cake{
+    padding-top: 20px;
+    /* position: relative; */
+}
+
+.container-type-cake .slider-type-cake{
+    position: relative;
+}
+
+.container-type-cake .slider-type-cake .slick-slide {
+    /* padding:10px; */
+    /* background-color:red; */
+    text-align:center;
+    margin-right:15px;
+    margin-left:15px;
+    /* border-style: dashed;
+    border-color: rgb(110, 6, 6); 
+    border-width: 1px;*/
+    border-radius: 30%;
+}
+
+.container-type-cake .slider-type-cake .slick-arrow{
+    display: inline-block;
+    /* color: rgb(143, 139, 139); */
+    top: 40%;
+    color:  rgb(110, 6, 6);
+    opacity: 0;
+    position: absolute;
+}
+
+ .container-type-cake .slider-type-cake .my-slider-arrow-left{
+    transform: translateX(-40%);
+
+}
+
+.container-type-cake .slider-type-cake .my-slider-arrow-right{
+    transform: translateX(60%);
+}
+
+.container-type-cake:hover .slick-arrow{
+    opacity: 1;
+}
+.container-type-cake .slider-type-cake .sli-type-cake-item{
+    position: relative;
+    /* background-color: tomato; */
+    height: 160px;
+    /* padding: 6px; */
+    /* box-shadow: 5px 5px 3px #888888; */
+    transition: 0.3s;
+}
+
+.container-type-cake .slider-type-cake .sli-type-cake-item:hover{
+    box-shadow: 5px 5px 3px #888888;
+}
+
+.sli-type-cake-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+/* .container-type-cake .slider-type-cake .sli-type-cake-item::before{
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+    
+} */
+
+.container-list-cake{
+    margin-top: 60px;
+}
+
+.container-list-cake .list-cake-tittle{
+    text-align: center;
+    font-size: 45px;
+    /* line-height: 1; */
+    color: rgb(110, 6, 6);
+    font-family: "Dancing Script";
+    padding-top: 0;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    line-height: 65px;   
+    height: 65px;
+
+    margin-bottom: 30px;
+}
+
+.container-list-cake .row-flex-my{
+    flex-wrap: nowrap;
+}
+
+.container-list-cake .list-cake-main .hth-col-3{
+    display: inline-block;
+    height: 350px;
+    /* background-color: rgb(214, 181, 49); */
+    margin-right: 13px;
+    margin-bottom: 13px;
+
+/*border: solid  #334862 1px;*/ /*==============================================*/
+
+}
+
+
+.container-list-cake .row-flex-my .hth-col-3:first-child{
+    /* margin-left: 0;
+    background-color: chartreuse;
+    display: inline-block; */
+}
+.container-list-cake .row-flex-my .hth-col-3:last-child{
+    margin-right: 0;
+    /* background-color: cornflowerblue; */
+}
+
+.container-list-cake .row-flex-my .hth-col-3:hover{
+    box-shadow: 5px 5px 3px #888888;
+}
+
+.container-list-cake .row-flex-my .l-c-image{
+    width: 100%;
+    height: 65%;
+    /* background-color: cyan; */
+}
+
+.container-list-cake .row-flex-my .l-c-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-list-cake .row-flex-my .l-c-info{
+    height: 35%;
+    width: 100%;
+    /* text-align: left; */
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container-list-cake .row-flex-my .l-c-info .name-cake{
+    color: #334862;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Lato;
+}
+
+.container-list-cake .row-flex-my .l-c-info .price-cake{
+    
+}
+
+.container-list-cake .row-flex-my .l-c-info .btn-buy{
+    margin-top: 7px;
+    text-align: center;
+}
+
+.container-list-cake .row-flex-my .l-c-info .btn-mua-hang{
+    width: 120px;
+    height: 35px;
+}
+
+
+/* =============================Phan trang============================ */
+
+.pagination {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .pagination li {
+    display: inline;
+    text-align: center;
+  }
+  .pagination a {
+    float: left;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 12px;
+    /* color: rgb(26, 24, 24); */
+    color: #334862;
+    margin-left: -1px;
+    border: 1px solid transparent;
+    line-height: 1.5;
+  }
+  .pagination a.active {
+    cursor: default;
+  }
+  .pagination a:active {
+    outline: none;
+  }
+
+.list-cake-sheet .modal-3 a{
+    margin-left: 3px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.list-cake-sheet .modal-3 a:hover {
+    background-color: #ac4836;
+}
+
+.list-cake-sheet.modal-3 a.active, .modal-3 a:active {
+    background-color:  #ac4836;
+}
+
+.list-cake-sheet{
+    text-align: center;
+}
+
+/* ============================= > Phan trang============================ */
+
+
+
+

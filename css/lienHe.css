@@ -1,0 +1,50 @@
+
+.link-map{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.link-map iframe{
+    width: 100%;
+}
+
+.info-contact{
+    margin-top: 30px;
+}
+
+.info-contact h3{
+    font-size: 28px;
+}
+
+.info-contact h4{
+    font-size: 20px;
+}
+
+.info-contact .info-icon span{
+    margin-right: 20px;
+}
+
+.send-mail{
+    margin-top: 40px;
+}
+
+.email-cho-ct-tai-day{
+    font-size: 18px;
+    display: inline-block;
+    width: 400px;
+    color: rgb(41, 39, 39);
+}
+
+.btn-send{
+    background-color: #446084;
+    /* border-color:  #c8ac48; */
+    border: none;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    color: white;
+    border-radius: 99px;
+    text-transform: uppercase;
+    padding-top: 3px;
+    font-weight: bold;
+  }

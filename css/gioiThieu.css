@@ -1,0 +1,196 @@
+.loi-mo-dau{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.loi-mo-dau .lmd-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.loi-mo-dau .lmd-image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: 2; */
+    background-color: black;
+    opacity: 50%;
+}
+
+.loi-mo-dau .lmd-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loi-mo-dau .lmd-content{
+    width: 50%;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #F1F1F1;  
+    text-align: center;
+}
+
+.muc-tieu{
+    padding: 20px 30px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.muc-tieu p{
+    padding-bottom: 20px;
+}
+
+.hinh-anh-cua-cua-hang{
+    
+}
+
+.hinh-anh-cua-hang .hach-tittle{
+    text-align: center;
+    font-size: 45px;
+    /* line-height: 1; */
+    color: rgb(110, 6, 6);
+    font-family: "Dancing Script";
+    padding-top: 0;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    line-height: 65px;   
+    height: 65px;
+
+}
+
+.hinh-anh-cua-hang .hach-main{
+    width: 100%;
+    height: 700px;
+    margin-top: 10px;
+    padding: 0 60px;
+    position: relative;
+}
+
+.hinh-anh-cua-hang .hach-slider{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* .hach-slider .slick-slide {
+    text-align:center;
+    margin-right:15px;
+    margin-left:15px;
+    border-style: dashed;
+    border-color: rgb(110, 6, 6);
+    border-width: 1px;
+  } */
+
+.hinh-anh-cua-hang .hach-slider .my-slider-arrow{
+    opacity: 0;
+    
+}
+
+.hinh-anh-cua-hang .hach-main:hover .my-slider-arrow{
+    opacity: 1;
+    
+}
+
+/* .hach-slider .slick-slide{
+    height: 700px;
+    background-color: chartreuse; 
+    display: inline-block;
+    position: absolute;
+} */
+
+.hinh-anh-cua-hang .hach-slider .hach-sli-item{
+    width: 100%;
+    height: 700px;
+    position: relative;
+   background-color: chocolate;
+}
+
+.hinh-anh-cua-hang .hach-slider .hach-sli-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.ban-quan-tri{
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: chocolate; */
+    /* display: inline-block; */
+    position: relative;
+}
+
+.ban-quan-tri .bqt-tittle{
+    text-align: center;
+    font-size: 45px;
+    /* line-height: 1; */
+    color: rgb(110, 6, 6);
+    font-family: "Dancing Script";
+    padding-top: 0;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    line-height: 65px;   
+    height: 65px;  
+}
+
+.ban-quan-tri .bqt-main{
+    height: 400px;
+    /* background-color: gray; */
+}
+
+.ban-quan-tri .bqt-main .bqt-main-item{
+/* background-color: green; */
+/* height: 100%; */
+text-align: center;
+position: relative;
+}
+
+
+.ban-quan-tri .bqt-main .bqt-main-item .bqt-img {
+    width: 100%;
+    height: 50%;
+    /* background-color: indigo; */
+    /* position: absolute; */
+}
+
+.ban-quan-tri .bqt-main .bqt-main-item .bqt-img img{ 
+    width: 192px;
+    height: 192px; 
+    object-fit: cover;
+    border-radius: 50%;
+    /* top: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    position: absolute; */
+    
+}
+
+.ban-quan-tri .bqt-main .bqt-main-item .bqt-name {
+    color: black;
+    font-size: 27px;
+
+}
+
+.ban-quan-tri .bqt-main .bqt-main-item .bqt-chuc-vu {
+    padding-bottom: 15px;
+}
+
+.ban-quan-tri .bqt-main .bqt-main-item .bqt-social-icon .bqt-ic{
+    font-size: 25px;
+    padding-right: 5px;
+    /* color: brown; */
+}
+
+.ban-quan-tri .bqt-main .bqt-main-item .bqt-social-icon .bqt-ic:hover{
+    color: rgb(110, 6, 6);
+    /* color: #446084 */
+}

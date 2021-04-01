@@ -1,0 +1,923 @@
+/* ======== 01. Reset CSS ======== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a, span, i {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  body {
+    color: #7a7a7a;
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
+  }
+
+/* ======== 02. General ======== */
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .btn {
+    color: #fff;
+    cursor: pointer;
+    padding: 11px 21px;
+  }
+
+  .btn-primary {
+    border: 1px solid #304771;
+    background-color: #304771;
+  }
+  .btn-primary:hover {
+    transition: 0.3s ease;
+    border-color: #c8ac48;
+    background-color: #c8ac48;
+  }
+
+  /* Grid System */
+
+/* ======== 03. Header ======== */
+  /* .header-top {
+    border-bottom: 1px solid #ededed;
+  }
+  .header-top__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-top__btns,
+  .header-top__right {
+    display: flex;
+  }
+  .header-top__right {
+    align-items: center;
+  }
+
+  .header-top__btns li {
+    margin-left: 15px;
+  }
+
+  .header-top .social-list,
+  .header-top .contact-list {
+    display: flex;
+  }
+
+  .header-top .contact-list {
+    font-size: 13px;
+  }
+
+  .header-top .social-list a, 
+  .header-top .contact-list a {
+    color: #7a7a7a;
+  }
+
+  .header-top .social-list a {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+  .header-top .contact-list a {
+    padding: 5px;
+    padding-right: 15px;
+  }
+  .header-top .contact-list .icons {
+    padding-right: 5px;
+    font-size: 16px;
+  } */
+
+
+  .header-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-main__right {
+    display: flex;
+  }
+
+  .header-main .logo {
+    display: flex;
+    align-items: center;
+  }
+  .header-main_menus {
+    display: flex;
+  }
+  .header-main_menus .menu-item a {
+    padding: 40px 0; 
+  }
+
+  .search-form {
+    right: 0;
+    top: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    background-color: purple;
+    transition: 0.3s;
+  }
+  .icon-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 15px;
+    color: white;
+    /* background-color: aqua; */
+  }
+  .icon-search:hover .search-form {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+/* headermy */
+  .header-main{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .header-main-content{
+    position: relative;
+    width: 100%;
+  }
+
+  .header-main__wrapper{
+    /* background-color: black; */
+    /* position: relative; */
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
+  }
+
+  .header-main__wrapper::before{
+    content: '';
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */  /*co the dung 4 dong tren thay cho width height 100%*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* pointer-events: none; */
+    z-index: 2;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: black;
+    opacity: 50%;
+  }
+
+  .header-main__wrapper .logo,
+  .header-main__wrapper .header-main__right{
+      z-index: 3;
+  }
+
+  .header-main__wrapper .logo{
+    padding-left: 20px;
+  }
+  .header-main__wrapper .header-main__right{
+    padding-right: 20px;
+  }
+
+  .header-main__right .header-main_menus .menu-item{
+    height: 100%;
+    padding-right: 30px;
+    display: inline-block;
+  }
+
+  .header-main_menus .menu-item a {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: 1s;
+  }
+
+  .header-main__right .header-main_menus .menu-item:hover a{
+    color:  rgb(240, 34, 34);
+ }
+/* >headermy */
+
+
+
+/* ======== 04. Footer ======== */
+
+
+/* ======== 05. Slider - Carousel ======== */
+
+
+/*========================================================================================================== my =========================*/
+
+
+/* ======================================== GRID SYSTEM======================================================*/
+.row-flex-my{
+  display: flex;
+  flex-wrap: wrap; /*cac phan tu con se sap xep thanh nhieu dong tu tren xuong duoi*/
+
+}
+
+.row-flex-my [class*="hth-col-"] {
+  /* padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;*/
+} 
+
+
+.row-flex-my .hth-col-7{
+  width: 58.4%;
+}
+
+.row-flex-my .hth-col-5{
+  width: 41.6%;
+}
+
+.row-flex-my .hth-col-6{
+  width: 50%;
+}
+
+.row-flex-my .hth-col-4{
+  width: 33.33333%;
+}
+
+.row-flex-my .hth-col-3{
+  width: 25%;
+}
+
+.row-flex-my .hth-col-2{
+  width: 16.666%;
+}
+
+.row-flex-my .hth-col-1{
+  width: 8.333%;
+}
+
+.col-flex-my{
+  height: 100%;
+  position: relative;
+}
+
+.col-flex-my .hth-row-1_2{
+  height: 50%;
+}
+
+
+/* ======================================== >GRID SYSTEM======================================================*/
+
+.main-slider{
+  position: relative;
+  /* background-color: blue; */
+}
+
+.slider-item{
+  width: 100%;
+  height: 720px;
+  /* background-color: rgb(192, 214, 231);
+  color: red; */
+  display: inline-block;
+  position: relative; 
+}
+
+.slider-item img{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position:absolute; 
+  object-fit: cover;
+}
+
+/* .slick-arrow{
+  /* color: black; */
+  /* background-color: black; 
+  padding-left: 50px;
+  padding-right: 70px;
+  font-size: 20px;
+  position: absalute;
+  z-index: 2;
+} */
+
+.my-slider-arrow{
+  /* padding-left: 50px;
+  padding-right: 70px; */
+  
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+/*slider arrow */
+.my-slider-arrow-right{
+  right: 0;
+  padding-right: 20px;
+}
+
+.main-slider:hover .my-slider-arrow {
+  opacity: 1;
+}
+
+/* slider content */
+.slider-item .slider-content{
+  z-index: 1;
+  color: white;
+  font-size: 40px;
+  
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  
+}
+.slider-item .slider-content .tittle{
+  font-size: 60px;
+  font-family: "Dancing Script";
+  font-weight: 700px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.slider-item .slider-content .sub-tittle{
+  font-size: 18px;
+  font-family: Open+Sans;
+}
+
+/* slider button */
+.slider-button{
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-top: 100px;
+  
+}
+
+.slider-button button{
+  background-color: #c8ac48;
+  /* border-color:  #c8ac48; */
+  border: none;
+  height: 38px;
+  width: 145px;
+}
+
+ .slider-button .btn-no-color-backgr{
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0);
+  width: 165px;
+  margin-left: 8px;
+  /* bottom: -5px; */
+ }
+
+ /* ==================== button=============== */
+.btn-read-more{
+  background-color: #c8ac48;
+  /* border-color:  #c8ac48; */
+  border: none;
+  height: 38px;
+  width: 145px;
+}
+
+.btn-purchase-now{
+  background-color: #c8ac48;
+  /* border-color:  #c8ac48; */
+  border: none;
+  height: 38px;
+  width: 145px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0);
+  width: 165px;
+  margin-left: 8px;
+}
+
+.my-btn{
+  background-color: transparent;
+  height: 38px;
+  width: 145px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+
+  text-align: center;
+}
+
+.btn-mua-hang{
+    text-transform: uppercase;
+    border-color: #334862;
+}
+/* ====================>button=============== */
+
+.slider-item .img-sli::before{
+  content: '';
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 25%;
+}
+
+
+ /*============================================ BOX UNDER SLIDER==================================== */
+
+ /* .box-under-slider{
+   // width: 1140px; 
+   width: 100%;
+   padding: 0px 24px;
+   height: 229px;
+   position: relative;
+   display: inline-block;
+   // background-color: blue; 
+   font-size: 0;
+
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+ } */
+
+ /* .box-under-slider .box-us{
+   ///* width: 33,3%; 
+   margin: 0px;
+   padding: 0;
+   width: 33%;
+   height: 100%;
+   ///* position: absolute; 
+   background-color: green;
+   display: inline-block;
+   vertical-align: middle;
+   font-size: 20px;
+   color: white;
+   text-align: center;
+   padding: 40px;
+ } */
+
+ /* .box-under-slider .box-us .tittle{
+    font-family: Libre;
+    font-size: 18px;
+    font-weight: 700;
+ }
+
+ .box-under-slider .box-us .description{
+  font-family: Lato;
+  font-size: 14px;
+  color: #b2bbca;
+}
+
+ .box-under-slider .box-left{
+  background-color: #304771;
+ }
+
+ .box-under-slider .box-middle{
+  background-color: #283c61;
+}
+
+.box-under-slider .box-right{
+  background-color: #1e3051;
+} */
+
+
+/* =======MAIN WHO WE ARE======== */
+
+.main-who-we-are{
+  text-align: center;
+
+}
+.wwa-main-tittle img,
+.icon-chia-bien img{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.wwa-main-tittle .sub-tittle{
+  font-family: "Dancing Script";
+  font-size: 20px;
+  font-weight: 800;
+  color: #695645;
+  
+}
+
+.wwa-main-tittle .main-tittle,
+.ten-muc{
+    font-size: 64px;
+    /* line-height: 1; */
+    color: rgb(110, 6, 6);
+    font-family: "Dancing Script", Arial, Tahoma, sans-serif;
+    padding-top: 0;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    line-height: 65px;   
+    height: 65px;
+     
+}
+
+.wwa-main{
+  width: 100%;
+  height: 516px;
+  /* background-color: black; */
+  position: relative;
+  align-items: flex-start;
+}
+
+.wwa-main .wwa-main-content{
+  /* background-color: blue; */
+  height: 100%; /*478/516*/
+  padding: 50px 15px 60px;
+  
+}
+
+.wwa-main .wwa-main-content .m-c-dsc{
+  font-size: 22px;
+  color: #777c84;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400px;
+  font-style: italic;
+  text-align: left;
+
+  margin-bottom: 20px;
+}
+
+.wwa-main .wwa-main-content .m-c-p-1,
+.wwa-main .wwa-main-content .m-c-p-2{
+  text-align: left;
+}
+
+.space-20{
+  width: 100%;
+  height: 20px;
+  
+}
+
+.space-50{
+  width: 100%;
+  height: 50px;
+  
+}
+
+
+
+.wwa-main .wwa-main-images{
+  /* background-color: yellow; */
+  /* display: inline-block; */
+  height: 100%;
+  padding: 50px 15px;
+  /* position: relative; */
+}
+
+.wwa-main .wwa-main-images .slick-list{
+  height: 100%;
+  /* background-color: blue; */
+}
+ .wwa-main .wwa-main-images .slick-track{
+  height: 100%;
+  /* background-color: green; */
+}
+
+.img-sli img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0; */
+}
+
+.wwa-main .wwa-main-images .my-slider-arrow{
+  padding: 0px 10px;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.wwa-main .wwa-main-images .my-slider-arrow-left{
+  left: 0;
+}
+
+.wwa-main .wwa-main-button{
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.wwa-main .wwa-main-button .btn-read-more{
+  display: inline-block;
+  height: 45px;
+  
+}
+
+.wwa-main .wwa-main-button .btn-purchase-now{
+  color: #304771;
+  border-color: #304771;
+  display: inline-block;
+  height: 45px;
+}
+
+.wwa-main .wwa-main-button .btn-read-more::after,
+.wwa-main .wwa-main-button .btn-purchase-now::after{
+  
+  height: 10px;
+
+}
+
+.wwa-main .wwa-main-button .btn-read-more:hover,
+.wwa-main .wwa-main-button .btn-purchase-now:hover{
+  background-color: #304771;
+  border-color: #304771;
+  color: white;
+  transition: 0.3s;
+  transform: translateY(-10px);
+}
+
+
+/* ===================Menu TYPE CAKE======================== */
+  /* tittle  */
+  .list-type-cake-tittle{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  /* chia layout*/
+.list-type-cake-main{
+  padding-left: 10px;
+  flex-wrap: wrap;
+}
+
+.container-list-type-cake .row-flex-my [class*="hth-col-"]{
+  height: 580px;
+}
+
+.container-list-type-cake .row-flex-my{
+  padding-bottom: 10px;
+  padding-right: 0px;
+}
+
+.container-list-type-cake .row-flex-my [class*="hth-col-"]:last-child{
+  padding-right: 0px;
+}
+
+.container-list-type-cake .row-flex-my .hth-col-6{
+  padding-right: 10px;
+}
+
+.container-list-type-cake .row-flex-my .hth-col-3{
+  height: 280px;
+  padding-right: 10px;
+  
+}
+
+.container-list-type-cake .row-flex-my .hth-row-1_2{
+  padding-bottom: 10px;
+}
+
+.container-list-type-cake .row-flex-my .hth-row-1_2:last-child{
+  padding-bottom: 0px;
+}
+
+.container-list-type-cake .row-flex-my .type-cake-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container-list-type-cake .row-flex-my img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.type-cake-img::before{
+  content: '';
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 25%;
+}
+
+/* de chia layout cho de */
+/* .container-list-type-cake .a{
+  background-color: yellow;
+}
+
+.container-list-type-cake .c{
+  background-color: blue;
+}
+
+.container-list-type-cake .d{
+  background-color: orangered;
+}
+
+.container-list-type-cake .d1{
+  background-color: green;
+}
+
+.container-list-type-cake .d2{
+  background-color: violet;
+}
+
+.container-list-type-cake .e{
+  background-color: pink;
+}
+
+.container-list-type-cake .f{
+  background-color: black;
+}
+
+.container-list-type-cake .g{
+  background-color: pink;
+}
+
+.container-list-type-cake .h{
+  background-color: black;
+} */
+/* >de chia layout cho de */
+
+.container-list-type-cake .row-flex-my [class*="hth-col-"],
+.container-list-type-cake .row-flex-my [class*="hth-row-"],
+.container-list-type-cake .row-flex-my .hth-col-3{
+  position: relative;
+}
+
+.list-type-cake-main .info-type-cake{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0%;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.list-type-cake-main .hth-row-1_2 .info-type-cake{
+  bottom: 2%;
+}
+
+.list-type-cake-main .name{
+    line-height: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.list-type-cake-main .number{
+    /* display: none; */
+    opacity: 0;
+    transition: 0.3s;
+    color: white;
+    pointer-events: none;
+}
+
+/* ~  [sau] cung cap sau [truoc] dau tien tim thay */
+.list-type-cake-main .type-cake-img:hover ~.info-type-cake{
+  bottom: 3%;
+}
+
+.list-type-cake-main 
+.list-type-cake-main .hth-row-1_2 .type-cake-img:hover ~.info-type-cake{
+  bottom: 5%;
+}
+
+.list-type-cake-main .type-cake-img:hover ~.info-type-cake .number{
+  /* display: inline-block; */
+  opacity: 1; 
+}
+
+/* =================== > Menu TYPE CAKE======================== */
+
+/* =================== BEST SELLING======================== */
+.best-selling-main{
+  margin-top: 10px;
+  padding: 0 50px;
+}
+
+.best-selling-slider .slick-slide {
+  /* padding:10px; */
+  /* background-color:red; */
+  text-align:center;
+  margin-right:15px;
+  margin-left:15px;
+  border-style: dashed;
+  border-color: rgb(110, 6, 6);
+  border-width: 1px;
+}
+
+
+.best-selling-main .slick-arrow{
+  display: inline-block;
+  /* color: rgb(143, 139, 139); */
+  color:  rgb(110, 6, 6);
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.best-selling-main .my-slider-arrow-left{
+    transform: translateX(-40%);
+}
+
+.best-selling-main .my-slider-arrow-right{
+    transform: translateX(65%);
+}
+
+.best-selling-main:hover .slick-arrow{
+  opacity: 1;
+}
+
+.best-selling-slider .bs-sli-item{
+  position: relative;
+  /* background-color: tomato; */
+  height: 385px;
+  padding: 6px;
+}
+
+.best-selling-slider .bs-sli-item .bs-image{
+  height: 70%;
+  width: 100%;
+}
+
+.best-selling-slider .bs-sli-item .bs-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.best-selling-slider .bs-sli-item .bs-info{
+  height: 30%;
+  width: 100%;
+  /* text-align: left; */
+  text-align: center;
+  margin-top: 5px;
+}
+
+.best-selling-slider .bs-sli-item .bs-info .name-cake{
+    color: #334862;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Lato;
+    
+}
+
+.best-selling-slider .bs-sli-item .bs-info .price-cake{
+    /* color: black; */
+
+}
+
+.best-selling-slider .bs-sli-item .bs-info .btn-buy{
+    margin-top: 7px;
+    text-align: center;
+}
+
+.best-selling-slider .bs-sli-item .bs-info .btn-mua-hang{
+  width: 120px;
+  height: 35px;
+}
+
+
+/* =================== > BEST SELLING======================== */
+
+
+
+/* ===================FOOTER======================== */
+
+
+.container-footer{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(29, 28, 28);
+}
+
+
+/* =================== > FOOTER======================= */
+
+
+
+
+
+
+
+
+/* bug
+-type of cake neu hover vao name or number se ko hien number */
